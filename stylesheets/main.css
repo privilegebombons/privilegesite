@@ -1,4 +1,5 @@
 @import url("normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400');
 
 /** LIUG.co 2017 **/
 
@@ -6,4 +7,66 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
+  font-family: 'Merriweather', serif;
+}
+
+span {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-weight: 300;
+  font-size: .75em;
+  letter-spacing: 8px;
+}
+
+/** items **/
+
+.home__fullpage {
+  height: 100vh;
+  background: url("../images/back__home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullpage__coll {
+  width: 30%;
+  min-width: 15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pdepalha__logo,
+.privilege__logo,
+.liug__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pdepalha__logo img{
+  width: 50%;
+  min-width: 15em;
+}
+
+.privilege__logo img{
+  width: 50%;
+  min-width: 15em;
+}
+
+.liug__logo img{
+  position: fixed;
+  bottom: 1em;
+  left: 47%;
+  width: 3%;
+  min-width: 49px;
+  opacity: .6;
+  transition: all .4s;
+}
+.liug__logo img:hover{
+  opacity: 1;
 }
