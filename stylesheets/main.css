@@ -1,1 +1,9 @@
-@@import url("normalize.css");
+/** LIUG.co 2017 **/
+
+@import url("normalize.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
